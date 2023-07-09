@@ -10,7 +10,7 @@
 .titleMotivationEl {
   font-size: 60px;
   font-weight: 900;
-  margin: 0;
+  margin: -5px 0px;
   color: #ffee9c;
   animation: dotAnimation 9s infinite;
 }

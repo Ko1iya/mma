@@ -1,0 +1,14 @@
+.сalling {
+  padding: 0 20px 0 20px;
+  font-size: 1.3em;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.сallingEl {
+  color: #5a2d2d;
+  text-align: center;
+  margin: 0;
+}
