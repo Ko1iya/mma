@@ -1,4 +1,4 @@
-import { RiMenu3Fill as BurgerIcon } from "react-icons/ri"
+import { CiMenuBurger as BurgerIcon } from "react-icons/ci"
 
 import styles from "./butBurger.module.css"
 
