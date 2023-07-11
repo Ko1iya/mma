@@ -6,8 +6,6 @@ interface MainTextProps {
 }
 
 function MainText(prop: MainTextProps) {
-  console.log(prop)
-
   return (
     <div className={`${styles.mainText} ${prop.className}`}>
       {prop.children}
