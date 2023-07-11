@@ -17,29 +17,23 @@
 
 @keyframes dotAnimation {
   0% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   25% {
-    background: -webkit-linear-gradient(to right, #b80000, #7e5700);
     background: linear-gradient(to right, #b80000, #7e5700);
-    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   50% {
     color: #ffee9c;
-    -webkit-transform: translateY(0);
+
     transform: translateY(0);
   }
   75% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
