@@ -1,3 +1,7 @@
 .achievements {
-  margin-top: 30px;
+  margin-top: 50px;
+}
+
+.achievementsText {
+  margin: 0 20px 10px 20px;
 }

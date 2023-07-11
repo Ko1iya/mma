@@ -16,7 +16,7 @@ function App() {
   }, [])
 
   return (
-    <div className='app'>
+    <div className={styles.app}>
       {loading ? (
         <div className={styles.loading}>
           <div className={styles.img}></div>

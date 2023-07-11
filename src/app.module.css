@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.app {
+  min-width: 100vw;
+}
+
 .img {
   background-image: url("./img/boy.gif");
   background-size: cover;

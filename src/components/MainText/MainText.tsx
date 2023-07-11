@@ -7,7 +7,9 @@ interface MainTextProps {
 
 function MainText(prop: MainTextProps) {
   return (
-    <div className={`${styles.mainText} ${prop.className}`}>
+    <div
+      className={`${styles.mainText} ${prop.className ? prop.className : ""}`}
+    >
       {prop.children}
     </div>
   )

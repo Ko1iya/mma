@@ -7,7 +7,9 @@ interface AchievementsProps {}
 function Achievements(prop: AchievementsProps) {
   return (
     <div className={styles.achievements}>
-      <MainText>Достижения наших воспитанников, которыми мы гордимся:</MainText>
+      <MainText className={styles.achievementsText}>
+        Достижения наших воспитанников, которыми мы гордимся:
+      </MainText>
 
       <Carusel />
     </div>
