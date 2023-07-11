@@ -1,0 +1,12 @@
+.carusel {
+  width: auto;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.387);
+  position: relative;
+}
+
+.caruselContainer {
+  height: 100%;
+  min-width: 900px;
+  position: absolute;
+}

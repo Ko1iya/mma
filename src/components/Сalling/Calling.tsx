@@ -1,4 +1,5 @@
 import ButCalling from "../ButCalling/ButCalling"
+import MainText from "../MainText/MainText"
 import styles from "./calling.module.css"
 
 interface СallingProps {}
@@ -6,10 +7,13 @@ interface СallingProps {}
 function Сalling(prop: СallingProps) {
   return (
     <div className={styles.сalling}>
-      <p className={styles.сallingEl}>Присоединяйся к нам сейчас!</p>
-      <p className={styles.сallingEl}>
+      <MainText className={styles.сallingEl}>
+        Присоединяйся к нам сейчас!
+      </MainText>
+      <MainText className={styles.сallingEl}>
         Мы поможем тебе преодолеть себя и стать настоящим бойцом!
-      </p>
+      </MainText>
+
       <ButCalling text='НАЧАТЬ ТРЕНИРОВКИ' />
     </div>
   )

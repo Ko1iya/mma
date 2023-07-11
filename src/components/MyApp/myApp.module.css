@@ -1,5 +1,9 @@
+:root {
+  --extra-height: 100px;
+}
+
 .myApp {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh + var(--extra-height));
   background-image: linear-gradient(221deg, #dc0f0f, #ffc709);
 }
