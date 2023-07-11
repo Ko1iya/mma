@@ -9,6 +9,7 @@ function MyApp() {
     <div className={styles.myApp}>
       <Header />
       <Main />
+      <div className={styles.footer}></div>
     </div>
   )
 }
