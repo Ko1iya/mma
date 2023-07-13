@@ -18,4 +18,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  transition: transform 0.3s ease-out;
+}
+
+.swiperListNoneTransition {
+  transition: none;
 }
