@@ -5,7 +5,11 @@ interface SwiperItemProps {
 }
 
 function SwiperItem(prop: SwiperItemProps) {
-  return <li className={styles.swiperItem}>{prop.children}</li>
+  return (
+    <li className={styles.swiperItem}>
+      <div className={styles.itemContainer}>{prop.children}</div>
+    </li>
+  )
 }
 
 export default SwiperItem

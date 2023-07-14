@@ -1,3 +1,7 @@
-const achievements = ["Победа 1", "Победа 2", "Победа 3"]
+const achievements = [
+  "Первое место в первенстве России по УБ",
+  "Победа 2",
+  "Победа 3",
+]
 
 export default achievements

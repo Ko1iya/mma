@@ -110,7 +110,6 @@ function Swiper({ items }: SwiperProps) {
           {items &&
             items.map((item, idx) => <SwiperItem key={idx}>{item}</SwiperItem>)}
         </ul>
-        <p>{startXRef.current}</p>
       </div>
     </div>
   )
