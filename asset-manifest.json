@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mma/static/css/main.a12b9c16.css",
+    "main.css": "/mma/static/css/main.21c94985.css",
     "main.js": "/mma/static/js/main.028e39df.js",
     "static/js/787.a981de7b.chunk.js": "/mma/static/js/787.a981de7b.chunk.js",
     "static/media/Cubs.jpeg": "/mma/static/media/Cubs.49bf77cce0f4a552d26c.jpeg",
@@ -9,12 +9,12 @@
     "static/media/boy.gif": "/mma/static/media/boy.d190d10cfe8169b9f6cc.gif",
     "static/media/logo.svg": "/mma/static/media/logo.788818cbe13fd0cbf2670d3cfc844366.svg",
     "index.html": "/mma/index.html",
-    "main.a12b9c16.css.map": "/mma/static/css/main.a12b9c16.css.map",
+    "main.21c94985.css.map": "/mma/static/css/main.21c94985.css.map",
     "main.028e39df.js.map": "/mma/static/js/main.028e39df.js.map",
     "787.a981de7b.chunk.js.map": "/mma/static/js/787.a981de7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a12b9c16.css",
+    "static/css/main.21c94985.css",
     "static/js/main.028e39df.js"
   ]
 }
