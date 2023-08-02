@@ -1,3 +1,4 @@
+import ButCalling from "../ButCalling/ButCalling"
 import Header from "../Header/Header"
 import Main from "../Main/Main"
 import styles from "./myApp.module.css"
@@ -10,6 +11,7 @@ function MyApp() {
       <Header />
       <Main />
       <div className={styles.footer}></div>
+      <ButCalling text='Начать тренировки' />
     </div>
   )
 }

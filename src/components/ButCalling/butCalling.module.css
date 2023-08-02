@@ -1,11 +1,16 @@
 .butCalling {
-  width: 300px;
-  height: 60px;
+  width: 200px;
+  height: 42px;
   border: none;
-  background: #fff7a5;
+  background: linear-gradient(90deg, #f7ebe1, #fff7a5);
   color: #9e4848;
   font-size: 1.2em;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
   border-radius: 17px;
-  z-index: 1;
+  z-index: 9999;
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  box-shadow: 0px 4px 0px 0px rgba(247, 235, 192, 0.66);
 }
