@@ -2,7 +2,6 @@ import { v4 as uuid } from "uuid"
 import { useEffect, useRef, useState } from "react"
 import MainText from "../MainText/MainText"
 import styles from "./aboutUs.module.css"
-import { log } from "console"
 
 interface AboutUsProps {
   children: {
@@ -14,7 +13,6 @@ interface AboutUsProps {
 }
 
 function AboutUs(prop: AboutUsProps) {
-  const myAboutContainer = useRef<HTMLDivElement>(null)
   const myTextContainer = useRef<HTMLDivElement>(null)
 
   const [stateText, setStateText] = useState(false)
@@ -22,19 +20,20 @@ function AboutUs(prop: AboutUsProps) {
     myTextContainer.current ? myTextContainer.current.offsetHeight : ""
   )
 
-  useEffect(() =>
-    setHeightText((pre) =>
-      myTextContainer.current ? myTextContainer.current.offsetHeight + 200 : ""
-    )
+  useEffect(
+    () =>
+      setHeightText((pre) =>
+        myTextContainer.current
+          ? myTextContainer.current.offsetHeight + 200
+          : ""
+      ),
+    [heightText]
   )
-
-  console.log(heightText)
 
   return (
     <div className={styles.aboutUs}>
       <div
         style={{ height: `${stateText ? heightText : 350}px` }}
-        ref={myAboutContainer}
         className={`${styles.aboutContainer} ${
           stateText && styles.aboutContainerOpen
         }`}
