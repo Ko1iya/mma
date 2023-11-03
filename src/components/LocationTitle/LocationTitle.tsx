@@ -1,5 +1,5 @@
 import styles from "./locationTitle.module.css"
-
+import ButBackToBranches from "../../img/ButBackToBranches.svg"
 interface IlocationMap {
   [key: number]: string
 }
@@ -22,7 +22,7 @@ function LocationTitle(prop: LocationTitleProps) {
   const num = value ? +value : null
   return (
     <button className={styles.locationTitle} onClick={() => editLocation()}>
-      {num ? locationMap[num] : null}
+      <img src={ButBackToBranches} alt='Назад' />
     </button>
   )
 }

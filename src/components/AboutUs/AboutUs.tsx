@@ -33,7 +33,7 @@ function AboutUs(prop: AboutUsProps) {
   return (
     <div className={styles.aboutUs}>
       <div
-        style={{ height: `${stateText ? heightText : 350}px` }}
+        style={{ height: `${stateText ? heightText : 360}px` }}
         className={`${styles.aboutContainer} ${
           stateText && styles.aboutContainerOpen
         }`}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import styles from "./main.module.css"
 import icon from "../../logo.svg"
 import cups from "../../img/Cubs.jpeg"
@@ -8,41 +8,22 @@ import Branches from "../Branches/Branches"
 import LocationTitle from "../LocationTitle/LocationTitle"
 import Map from "../Map/Map"
 import TwoGisModal from "../TwoGisModal/TwoGisModal"
+import { AppContext } from "../../App"
 
 interface MainProps {}
 
 function Main(prop: MainProps) {
-  const [location, setLocation] = useState(localStorage.getItem("location")) // для определения локации
-
   const [twoGisModalOpen, setTwoGisModalOpen] = useState(false)
 
   function handlerModalOpen() {
     setTwoGisModalOpen((pre) => !pre)
   }
 
-  function handlerChangeLocation(param: string) {
-    setLocation(param)
-  } // для передачи в компонент Branches
-
-  function editLocation() {
-    setLocation(null)
-  } // для редактирования location, передается в компонент LocationTitle
-
-  // Эффект, который реагирует на изменение location и записывает значение в localStorage
-  useEffect(() => {
-    const storedLocation = localStorage.getItem("location")
-    if (storedLocation !== location) {
-      localStorage.setItem("location", `${location}`)
-    }
-  }, [location])
+  const { editLocation, location } = useContext(AppContext)
 
   return (
     <main className={styles.main}>
       <LocationTitle editLocation={editLocation} value={location} />
-
-      {location == null && (
-        <Branches changeLocation={handlerChangeLocation}></Branches>
-      )}
 
       <img className={styles.img} src={icon} alt='Эмблема клуба' />
       <AboutUs title='Наш клуб с историей' img={cups}>
