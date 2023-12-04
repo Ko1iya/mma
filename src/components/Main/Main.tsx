@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useContext } from "react"
 import styles from "./main.module.css"
-import icon from "../../logo.svg"
+
 import cups from "../../img/Cubs.jpeg"
 import rustam from "../../img/Rustam.png"
 import AboutUs from "../AboutUs/AboutUs"
 import Branches from "../Branches/Branches"
-import LocationTitle from "../LocationTitle/LocationTitle"
+import BackBranches from "../BackBranches/BackBranches"
 import Map from "../Map/Map"
 import TwoGisModal from "../TwoGisModal/TwoGisModal"
 import { AppContext } from "../../App"
@@ -23,9 +23,8 @@ function Main(prop: MainProps) {
 
   return (
     <main className={styles.main}>
-      <LocationTitle editLocation={editLocation} value={location} />
+      <BackBranches editLocation={editLocation} value={location} />
 
-      <img className={styles.img} src={icon} alt='Эмблема клуба' />
       <AboutUs title='Наш клуб с историей' img={cups}>
         {{
           preText:

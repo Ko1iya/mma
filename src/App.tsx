@@ -39,7 +39,7 @@ function App() {
 
   function editLocation() {
     setLocation(null)
-  } // для редактирования location, передается в компонент LocationTitle
+  } // для редактирования location, передается в компонент BackBranches
 
   // Эффект, который реагирует на изменение location и записывает значение в localStorage
   useEffect(() => {

@@ -1,11 +1,12 @@
 .containerBranches {
   background: rgb(26, 26, 26);
-  width: 100vw;
+  width: 100%;
   height: auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 44px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .branches {
@@ -14,7 +15,7 @@
   height: auto;
   padding: 10px;
   max-height: 538px;
-
+  max-width: 350px;
   box-shadow: 0px 0px 8px 0px rgba(247, 235, 192, 0.66);
   display: flex;
   align-items: center;

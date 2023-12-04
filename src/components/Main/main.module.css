@@ -6,15 +6,3 @@
   align-items: center;
   padding-top: 30px;
 }
-
-.img {
-  width: 60vw;
-  height: auto;
-  position: fixed;
-  opacity: 0.2;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}

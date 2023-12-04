@@ -1,4 +1,4 @@
-import styles from "./locationTitle.module.css"
+import styles from "./backBranches.module.css"
 import ButBackToBranches from "../../img/ButBackToBranches.svg"
 interface IlocationMap {
   [key: number]: string
@@ -12,19 +12,19 @@ const locationMap: IlocationMap = {
   5: "Киренск",
 }
 
-interface LocationTitleProps {
+interface BackBranchesProps {
   value: string | null
   editLocation: () => void
 }
 
-function LocationTitle(prop: LocationTitleProps) {
+function BackBranches(prop: BackBranchesProps) {
   const { value, editLocation } = prop
   const num = value ? +value : null
   return (
-    <button className={styles.locationTitle} onClick={() => editLocation()}>
+    <button className={styles.backBranches} onClick={() => editLocation()}>
       <img src={ButBackToBranches} alt='Назад' />
     </button>
   )
 }
 
-export default LocationTitle
+export default BackBranches
