@@ -38,7 +38,7 @@ function App() {
   } // для передачи в компонент Branches
 
   function editLocation() {
-    setLocation(null)
+    setLocation("0")
   } // для редактирования location, передается в компонент BackBranches
 
   // Эффект, который реагирует на изменение location и записывает значение в localStorage
@@ -63,7 +63,7 @@ function App() {
               <span className={styles.dot}></span>
             </div>
           </div>
-        ) : location == null ? (
+        ) : location == "0" ? (
           <Branches changeLocation={handlerChangeLocation}></Branches>
         ) : (
           <MyApp />

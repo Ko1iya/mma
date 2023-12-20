@@ -4,12 +4,13 @@ interface ButBrancheProps {
   children: string
   id: number
   changeLocation: (param: string) => void
+  className?: string
 }
 
 function ButBranche(prop: ButBrancheProps) {
   return (
     <button
-      className={styles.butBranche}
+      className={`${styles.butBranche} ${prop.className}`}
       onClick={() => prop.changeLocation(`${prop.id}`)}
     >
       {prop.children}

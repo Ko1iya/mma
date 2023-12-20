@@ -13,7 +13,7 @@ function MyApp() {
     const handleScroll = () => {
       const scrolled = window.scrollY
       const countOpacity =
-        scrolled < 100 ? 0 : scrolled / 1000 > 0.2 ? 0.2 : scrolled / 1000
+        scrolled < 100 ? 0 : scrolled / 1000 > 0.2 ? 0.2 : scrolled / 1000 - 0.1
       setMyScrollY(countOpacity)
     }
 

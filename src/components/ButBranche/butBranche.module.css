@@ -1,6 +1,6 @@
 .butBranche {
-  background: rgb(111, 102, 68);
-  color: #f7eaff;
+  background: rgba(111, 102, 68, 0);
+  color: #dfdfdf;
   font-size: 1.3em;
   border: 1px solid rgb(255 230 124);
   border-radius: 5px;
@@ -9,6 +9,29 @@
   margin-bottom: 10px;
   font-family: "Open Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  width: 100%;
+  width: 90%;
   height: auto;
+  animation: butAnimation 6s infinite;
+}
+
+@keyframes butAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
