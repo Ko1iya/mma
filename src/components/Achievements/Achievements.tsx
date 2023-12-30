@@ -1,7 +1,7 @@
 import Swiper from "../Swiper/Swiper"
 import MainText from "../MainText/MainText"
 import styles from "./achievements.module.css"
-import achievements from "../../data/achievements"
+import { achievements } from "../../data/achievements"
 
 interface AchievementsProps {}
 

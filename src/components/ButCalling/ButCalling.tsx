@@ -2,10 +2,15 @@ import styles from "./butCalling.module.css"
 
 interface ButCallingProps {
   text: string
+  myOnClick?: () => void
 }
 
-function ButCalling({ text }: ButCallingProps) {
-  return <button className={styles.butCalling}>{text}</button>
+function ButCalling({ text, myOnClick }: ButCallingProps) {
+  return (
+    <button className={styles.butCalling} onClick={myOnClick}>
+      {text}
+    </button>
+  )
 }
 
 export default ButCalling

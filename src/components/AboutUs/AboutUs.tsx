@@ -24,7 +24,8 @@ function AboutUs(prop: AboutUsProps) {
     () =>
       setHeightText((pre) =>
         myTextContainer.current
-          ? myTextContainer.current.offsetHeight + 200
+          ? // ? myTextContainer.current.offsetHeight + 250
+            myTextContainer.current.offsetHeight + 250
           : ""
       ),
     [heightText]
@@ -33,16 +34,16 @@ function AboutUs(prop: AboutUsProps) {
   return (
     <div className={styles.aboutUs}>
       <div
-        style={{ height: `${stateText ? heightText : 360}px` }}
+        style={{ height: `${stateText ? heightText : 395}px` }}
+        // Наверху с анимацией тупой, внизу без внимации
+        // style={{ height: `auto` }}
         className={`${styles.aboutContainer} ${
           stateText && styles.aboutContainerOpen
         }`}
         onClick={() => {
           setStateText((pre) => !pre)
           setHeightText((pre) =>
-            myTextContainer.current
-              ? myTextContainer.current.offsetHeight + 100
-              : ""
+            myTextContainer.current ? myTextContainer.current.offsetHeight : ""
           )
         }}
       >

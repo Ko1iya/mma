@@ -9,16 +9,15 @@
 .aboutContainer {
   width: 100%;
 
-  height: 350px;
+  height: auto;
   margin: 20px;
 
   border: 1px solid #00000073;
   box-shadow: 0px 0px 9px 0px rgb(0 0 0);
   border-radius: 1px;
   position: relative;
-  overflow: hidden;
   position: relative;
-  background-color: #94949445;
+  background: linear-gradient(to right, #ffc4005e, #ffe40000);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -30,7 +29,7 @@
 }
 
 .title {
-  color: #f7eaff;
+  color: #f1d003;
   font-size: 1.4em;
   margin: 10px 0 0 10px;
 }
@@ -40,13 +39,13 @@
 }
 
 .readMore {
-  color: #f7eaff;
+  height: 22px;
+  color: #f7eaff85;
   font-size: 1.2em;
   margin: 0;
   padding: 5px 10px 10px 0;
   text-align: end;
-  background-color: #00000054;
-  border: 1px solid rgba(0, 0, 0, 0.884);
+
   border-left-width: 0px;
   border-right-width: 0px;
 }
@@ -64,7 +63,7 @@
   width: 100%;
   height: auto;
   position: absolute;
-  top: -20px;
+  top: 0px;
 }
 
 .imgAboutUsContainer {
@@ -72,5 +71,5 @@
   width: 100%;
   height: 150px;
   min-height: 150px;
-  overflow: hidden;
+  z-index: -1;
 }

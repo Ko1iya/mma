@@ -1,19 +1,34 @@
 import ButBranche from "../ButBranche/ButBranche"
 import styles from "./branches.module.css"
-import icon from "../../logo.svg"
+import icon from "../../logo.png"
 import AboutUs from "../AboutUs/AboutUs"
-import cups from "../../img/Cubs.jpeg"
+import cups from "../../img/Cubs.png"
+import ButCalling from "../ButCalling/ButCalling"
+import { useRef } from "react"
+import Archive from "../Archive/Archive"
+import MainText from "../MainText/MainText"
 
 interface AboutUsProps {
   changeLocation: (param: string) => void
 }
 
 function Branches(prop: AboutUsProps) {
+  const lastButton = useRef<HTMLDivElement>(null)
+
+  const scrollToElement = () => {
+    if (lastButton.current) {
+      lastButton.current.scrollIntoView({
+        behavior: "smooth", // опционально для плавного скролла
+        block: "start", // опционально для позиционирования элемента относительно окна просмотра
+      })
+    }
+  }
+
   return (
     <div className={styles.containerBranches}>
       <div className={styles.branches}>
         <img className={styles.img} src={icon} alt='Эмблема клуба' />
-        <AboutUs title='Наш клуб с историей' img={cups}>
+        <AboutUs title='История нашего клуба' img={cups}>
           {{
             preText:
               "Наш клуб существует уже 25 лет, и за это время мы накопили огромный опыт...",
@@ -24,8 +39,9 @@ function Branches(prop: AboutUsProps) {
           }}
         </AboutUs>
         <h1 className={styles.titleBranches}>
-          Какой спортивный клуб рядом с вами?
+          Выбери ближайший спортивный клуб
         </h1>
+        <div ref={lastButton}></div>
         <ButBranche
           id={1}
           changeLocation={prop.changeLocation}
@@ -54,6 +70,7 @@ function Branches(prop: AboutUsProps) {
         >
           г. Зима школа № 5.
         </ButBranche>
+
         <ButBranche
           id={5}
           changeLocation={prop.changeLocation}
@@ -61,10 +78,30 @@ function Branches(prop: AboutUsProps) {
         >
           г. Киренск, СК "Путеец"
         </ButBranche>
-        <img
-          src='https://live.staticflickr.com/65535/53409952895_6a9a9e83ca_w.jpg'
-          alt='My'
-        />
+
+        <div
+          style={{
+            fontSize: "1.6em",
+            color: "#eeeeee",
+            background: "linear-gradient(to right, #ffc40066, #ffe40000)",
+            padding: "5px 0 0 13px",
+            fontWeight: "100",
+            width: "100%",
+            boxSizing: "border-box",
+            marginTop: "20px",
+            height: "80px",
+          }}
+        >
+          Архив фото
+        </div>
+        <Archive mySrc='https://live.staticflickr.com/65535/53418553032_52ce554759_n.jpg'></Archive>
+        <Archive mySrc='https://live.staticflickr.com/65535/53418552997_4b148ba5cc_n.jpg'></Archive>
+        <Archive mySrc='https://live.staticflickr.com/65535/53419637898_78a0077401_n.jpg'></Archive>
+
+        <ButCalling
+          text='Выбрать филиал'
+          myOnClick={scrollToElement}
+        ></ButCalling>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 .loading {
   width: 100%;
   height: 100vh;
-  background: rgb(111, 102, 68);
+  background: linear-gradient(221deg, #181818, #c49804);
   display: flex;
   justify-content: center;
   align-items: center;

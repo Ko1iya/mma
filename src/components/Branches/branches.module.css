@@ -23,13 +23,13 @@
 .titleBranches {
   font-size: 1.6em;
   color: #eeeeee;
-
+  background: linear-gradient(to right, #ffc40066, #ffe40000);
   padding: 5px 0 0 13px;
   font-weight: 100;
 }
 
 .img {
-  width: 90px;
+  width: 200px;
   height: auto;
 }
 

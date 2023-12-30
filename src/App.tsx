@@ -34,11 +34,19 @@ function App() {
   const [location, setLocation] = useState(localStorage.getItem("location"))
 
   function handlerChangeLocation(param: string) {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // опционально для плавного скролла
+    })
     setLocation(param)
   } // для передачи в компонент Branches
 
   function editLocation() {
     setLocation("0")
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // опционально для плавного скролла
+    })
   } // для редактирования location, передается в компонент BackBranches
 
   // Эффект, который реагирует на изменение location и записывает значение в localStorage
