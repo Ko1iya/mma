@@ -1,0 +1,30 @@
+import MainText from "../MainText/MainText"
+import styles from "./trainer.module.css"
+
+interface TrainerProps {
+  children: string
+  img: string
+  text: string
+}
+
+function Trainer(prop: TrainerProps) {
+  return (
+    <div className={styles.trainer}>
+      <MainText
+        style={{
+          width: "100%",
+          paddingLeft: "16px",
+          fontWeight: "bold",
+          color: "#fff2ac",
+        }}
+      >
+        {prop.children}
+      </MainText>
+      <img src={prop.img} className={styles.img}></img>
+      <div className={styles.text}>{prop.text}</div>
+      <div className={styles.decorLine}></div>
+    </div>
+  )
+}
+
+export default Trainer

@@ -10,6 +10,20 @@
   background-image: linear-gradient(221deg, #181818, #c49804);
 }
 
+.containerButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(to right, #ffc4005e, #ffe40000);
+  padding-bottom: 20px;
+}
+
+/* Для того чтобы компенсировать gap 14px в .containerButton  */
+.containerButton > div:first-child {
+  margin-top: -14px;
+}
+
 .branches {
   width: 100%;
   height: auto;
@@ -17,20 +31,30 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 50px;
+  padding-bottom: 100px;
 }
 
 .titleBranches {
   font-size: 1.6em;
   color: #eeeeee;
   background: linear-gradient(to right, #ffc40066, #ffe40000);
-  padding: 5px 0 0 13px;
+  padding: 5px 0 10px 13px;
+  margin: 0;
   font-weight: 100;
 }
 
 .img {
   width: 200px;
   height: auto;
+}
+
+.containerTrainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(to right, #ffc4005e, #ffe40000);
 }
 
 .delay1 {
