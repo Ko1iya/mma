@@ -15,7 +15,8 @@ function Trainer(prop: TrainerProps) {
           width: "100%",
           paddingLeft: "16px",
           fontWeight: "bold",
-          color: "#fff2ac",
+          color: "#4f3900",
+          background: "#ffdb0057",
         }}
       >
         {prop.children}

@@ -6,7 +6,10 @@
   width: 100%;
   min-height: calc(100vh + var(--extra-height));
 
-  background-image: linear-gradient(221deg, #181818, #c49804);
+  background-image: url("../../img/fonKraska.jpg");
+  background-size: 800px 1484px;
+  background-position: top;
+  background-repeat: repeat-y;
 }
 
 .footer {

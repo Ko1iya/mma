@@ -22,7 +22,11 @@ function BackBranches(prop: BackBranchesProps) {
   const num = value ? +value : null
   return (
     <button className={styles.backBranches} onClick={() => editLocation()}>
-      <img src={ButBackToBranches} alt='Назад' />
+      <img
+        src={ButBackToBranches}
+        className={styles.butBackToBranches}
+        alt='Назад'
+      />
     </button>
   )
 }

@@ -1,5 +1,4 @@
 .containerBranches {
-  background: rgb(26, 26, 26);
   width: 100%;
   height: auto;
   min-height: 100vh;
@@ -7,7 +6,12 @@
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 5px;
-  background-image: linear-gradient(221deg, #181818, #c49804);
+  background-image: url("../../img/fonKraska.jpg");
+  background-size: 800px 1484px;
+  background-position: top;
+  background-repeat: repeat-y;
+
+  /* background-image: linear-gradient(221deg, #181818, #c49804); */
 }
 
 .containerButton {
@@ -38,7 +42,7 @@
 .titleBranches {
   font-size: 1.6em;
   color: #eeeeee;
-  background: linear-gradient(to right, #ffc40066, #ffe40000);
+  background: linear-gradient(to right, #ffc40066, #00000052);
   padding: 5px 0 10px 13px;
   margin: 0;
   font-weight: 100;
@@ -71,4 +75,10 @@
 }
 .delay5 {
   animation-delay: 4.8s;
+}
+
+@media screen and (min-width: 800px) {
+  .containerBranches {
+    background-size: 1700px 3153px;
+  }
 }
