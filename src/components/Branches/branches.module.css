@@ -21,6 +21,8 @@
   gap: 14px;
   background: linear-gradient(to right, #ffc4005e, #ffe40000);
   padding-bottom: 20px;
+  box-shadow: 0px 0px 9px 0px rgb(0 0 0);
+  max-width: 520px;
 }
 
 /* Для того чтобы компенсировать gap 14px в .containerButton  */
@@ -57,8 +59,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
   background: linear-gradient(to right, #ffc4005e, #ffe40000);
+  max-width: 520px;
+  box-shadow: 0px 0px 9px 0px rgb(0 0 0);
 }
 
 .delay1 {
@@ -80,5 +83,11 @@
 @media screen and (min-width: 800px) {
   .containerBranches {
     background-size: 1700px 3153px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .containerBranches {
+    background-size: 3400px 6306px;
   }
 }

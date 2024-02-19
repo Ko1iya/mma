@@ -26,3 +26,9 @@
   font-weight: bold;
   padding-top: 10px;
 }
+
+@media screen and (min-width: 700px) {
+  .text {
+    font-size: 30px;
+  }
+}

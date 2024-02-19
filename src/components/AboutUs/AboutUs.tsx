@@ -17,7 +17,7 @@ function AboutUs(prop: AboutUsProps) {
 
   const [stateText, setStateText] = useState(false)
   const [heightText, setHeightText] = useState(
-    myTextContainer.current ? myTextContainer.current.offsetHeight : ""
+    myTextContainer.current ? myTextContainer.current.offsetHeight + 250 : ""
   )
 
   useEffect(
@@ -34,7 +34,11 @@ function AboutUs(prop: AboutUsProps) {
   return (
     <div className={styles.aboutUs}>
       <div
-        style={{ height: `${stateText ? heightText : 395}px` }}
+        style={{
+          height: `${
+            +heightText > 700 ? +heightText + 70 : +heightText + 70
+          }px`,
+        }}
         // Наверху с анимацией тупой, внизу без внимации
         // style={{ height: `auto` }}
         className={`${styles.aboutContainer} ${

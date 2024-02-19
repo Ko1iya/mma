@@ -1,7 +1,6 @@
 import Swiper from "../Swiper/Swiper"
 import MainText from "../MainText/MainText"
 import styles from "./achievements.module.css"
-import { achievements } from "../../data/achievements"
 
 interface AchievementsProps {}
 
@@ -12,7 +11,8 @@ function Achievements(prop: AchievementsProps) {
         Достижения наших воспитанников, которыми мы гордимся:
       </MainText>
 
-      <Swiper items={achievements} />
+      {/* <Swiper items={achievements} /> */}
+      {/* был импорт массива с достижениями */}
     </div>
   )
 }

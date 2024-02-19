@@ -81,7 +81,7 @@ function Branches(prop: AboutUsProps) {
             changeLocation={prop.changeLocation}
             className={styles.delay5}
           >
-            г. Киренск, СК "Путеец"
+            п. Урик
           </ButBranche>
         </div>
 

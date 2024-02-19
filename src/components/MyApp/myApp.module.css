@@ -26,3 +26,15 @@
   transform: translate(-50%, -50%);
   z-index: 0;
 }
+
+@media screen and (min-width: 800px) {
+  .myApp {
+    background-size: 1700px 3153px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .myApp {
+    background-size: 3400px 6306px;
+  }
+}
