@@ -4,6 +4,7 @@ import React from "react"
 
 import MyApp from "./components/MyApp/MyApp"
 import Branches from "./components/Branches/Branches"
+import { myDataBranches } from "./data/achievements"
 
 //------------------------
 interface IAppContext {
@@ -52,12 +53,16 @@ function App() {
   // Эффект, который реагирует на изменение location и записывает значение в localStorage
   useEffect(() => {
     const storedLocation = localStorage.getItem("location")
+    console.log(storedLocation)
+
     if (storedLocation !== location) {
       localStorage.setItem("location", `${location}`)
     }
-  }, [location])
+  }, [])
 
   //-----------------------------------------
+
+  console.log(location)
 
   return (
     <AppContext.Provider value={{ location, editLocation }}>

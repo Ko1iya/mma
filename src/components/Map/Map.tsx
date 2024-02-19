@@ -1,24 +1,24 @@
 import styles from "./map.module.css"
 import KudaMap from "../../img/KudaMap.png"
-import AngarskMap from "../../img/AngarskMap.png"
+import { myDataBranches } from "../../data/achievements"
 
 interface Iaddresses {
   [key: number]: string
 }
 const locationMap: Iaddresses = {
-  1: AngarskMap,
-  2: AngarskMap,
-  3: KudaMap,
-  4: AngarskMap,
-  5: AngarskMap,
+  1: myDataBranches.angarsk.map,
+  2: myDataBranches.meget.map,
+  3: myDataBranches.kuda.map,
+  4: myDataBranches.zima.map,
+  5: myDataBranches.urik.map,
 }
 
 const addresses: Iaddresses = {
-  1: "г. Ангарск, 17 мк/р, шк. №17",
-  2: "п. Мегет, переулок Школьный, шк. №41",
-  3: "п. Хомутово, Кудинский спортивный комплекс",
-  4: "г. Зима школа № 5.",
-  5: "п. Урик",
+  1: myDataBranches.angarsk.name,
+  2: myDataBranches.meget.name,
+  3: myDataBranches.kuda.name,
+  4: myDataBranches.zima.name,
+  5: myDataBranches.urik.name,
 }
 
 interface MapProps {

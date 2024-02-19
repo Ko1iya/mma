@@ -14,11 +14,21 @@ interface AboutUsProps {
 
 function AboutUs(prop: AboutUsProps) {
   const myTextContainer = useRef<HTMLDivElement>(null)
+  const myAboutUs = useRef<HTMLDivElement>(null)
 
   const [stateText, setStateText] = useState(false)
   const [heightText, setHeightText] = useState(
     myTextContainer.current ? myTextContainer.current.offsetHeight + 250 : ""
   )
+
+  const scrollToElement = () => {
+    if (myAboutUs.current) {
+      myAboutUs.current.scrollIntoView({
+        behavior: "smooth", // опционально для плавного скролла
+        block: "start", // опционально для позиционирования элемента относительно окна просмотра
+      })
+    }
+  }
 
   useEffect(
     () =>
@@ -32,11 +42,11 @@ function AboutUs(prop: AboutUsProps) {
   )
 
   return (
-    <div className={styles.aboutUs}>
+    <div className={styles.aboutUs} ref={myAboutUs}>
       <div
         style={{
           height: `${
-            +heightText > 700 ? +heightText + 70 : +heightText + 70
+            +heightText > 700 ? +heightText + 40 : +heightText + 70
           }px`,
         }}
         // Наверху с анимацией тупой, внизу без внимации
@@ -49,6 +59,7 @@ function AboutUs(prop: AboutUsProps) {
           setHeightText((pre) =>
             myTextContainer.current ? myTextContainer.current.offsetHeight : ""
           )
+          scrollToElement()
         }}
       >
         <div className={styles.imgAboutUsContainer}>
