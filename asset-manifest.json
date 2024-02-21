@@ -1,31 +1,33 @@
 {
   "files": {
-    "main.css": "/mma/static/css/main.d1cd9087.css",
-    "main.js": "/mma/static/js/main.4e276635.js",
+    "main.css": "/mma/static/css/main.1b0cac13.css",
+    "main.js": "/mma/static/js/main.014775f4.js",
     "static/js/787.a981de7b.chunk.js": "/mma/static/js/787.a981de7b.chunk.js",
-    "static/media/fonKraska.png": "/mma/static/media/fonKraska.6856b76949bfc3f21cc0.png",
+    "static/media/fonKraska.jpg": "/mma/static/media/fonKraska.c6647c41079469c1ee0f.jpg",
     "static/media/novzov.png": "/mma/static/media/novzov.587823f8f52dc1a18018.png",
     "static/media/Shmakov.png": "/mma/static/media/Shmakov.f9b0c9fb98d07d04e766.png",
     "static/media/cups.png": "/mma/static/media/cups.e96030be0ca0edbf7bbc.png",
     "static/media/Odinaev.png": "/mma/static/media/Odinaev.80347f330e826ee21cbe.png",
     "static/media/Chupin.png": "/mma/static/media/Chupin.9da486700a64f343012d.png",
     "static/media/logo3.png": "/mma/static/media/logo3.5c908ae5e481c840dfb1.png",
-    "static/media/Rustam.png": "/mma/static/media/Rustam.5a4fa6b07569857a0310.png",
-    "static/media/AngarskMap.png": "/mma/static/media/AngarskMap.2f8e77e746b1d860233f.png",
     "static/media/Kovalenko.png": "/mma/static/media/Kovalenko.a9d50284562c137d1e10.png",
+    "static/media/mapAngarsk.png": "/mma/static/media/mapAngarsk.973ae3ff2a3dfff2251d.png",
     "static/media/KudaMap.png": "/mma/static/media/KudaMap.788b37db5246b868d3e7.png",
+    "static/media/mapMeget.png": "/mma/static/media/mapMeget.465856df5e15fd3d12fc.png",
     "static/media/OpenSans-Regular.ttf": "/mma/static/media/OpenSans-Regular.9a6cfa5890d7f3eef585.ttf",
     "static/media/boy.gif": "/mma/static/media/boy.d190d10cfe8169b9f6cc.gif",
+    "static/media/mapZima.png": "/mma/static/media/mapZima.bfc9aa6d6fd5785f1021.png",
     "static/media/logo.png": "/mma/static/media/logo.c37869995ff5f2f09763.png",
+    "static/media/mapUrik.png": "/mma/static/media/mapUrik.b85af517127b5f7ea01e.png",
     "static/media/logo.svg": "/mma/static/media/logo.788818cbe13fd0cbf2670d3cfc844366.svg",
     "index.html": "/mma/index.html",
-    "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.8b9917869f04b825b5f8e110429bb271.svg",
-    "main.d1cd9087.css.map": "/mma/static/css/main.d1cd9087.css.map",
-    "main.4e276635.js.map": "/mma/static/js/main.4e276635.js.map",
+    "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.081f4f20a4fb15360a48937961580712.svg",
+    "main.1b0cac13.css.map": "/mma/static/css/main.1b0cac13.css.map",
+    "main.014775f4.js.map": "/mma/static/js/main.014775f4.js.map",
     "787.a981de7b.chunk.js.map": "/mma/static/js/787.a981de7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1cd9087.css",
-    "static/js/main.4e276635.js"
+    "static/css/main.1b0cac13.css",
+    "static/js/main.014775f4.js"
   ]
 }
