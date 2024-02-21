@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mma/static/css/main.1b0cac13.css",
-    "main.js": "/mma/static/js/main.014775f4.js",
+    "main.css": "/mma/static/css/main.2a797d90.css",
+    "main.js": "/mma/static/js/main.394a7295.js",
     "static/js/787.a981de7b.chunk.js": "/mma/static/js/787.a981de7b.chunk.js",
     "static/media/fonKraska.jpg": "/mma/static/media/fonKraska.c6647c41079469c1ee0f.jpg",
     "static/media/novzov.png": "/mma/static/media/novzov.587823f8f52dc1a18018.png",
@@ -22,12 +22,12 @@
     "static/media/logo.svg": "/mma/static/media/logo.788818cbe13fd0cbf2670d3cfc844366.svg",
     "index.html": "/mma/index.html",
     "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.081f4f20a4fb15360a48937961580712.svg",
-    "main.1b0cac13.css.map": "/mma/static/css/main.1b0cac13.css.map",
-    "main.014775f4.js.map": "/mma/static/js/main.014775f4.js.map",
+    "main.2a797d90.css.map": "/mma/static/css/main.2a797d90.css.map",
+    "main.394a7295.js.map": "/mma/static/js/main.394a7295.js.map",
     "787.a981de7b.chunk.js.map": "/mma/static/js/787.a981de7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b0cac13.css",
-    "static/js/main.014775f4.js"
+    "static/css/main.2a797d90.css",
+    "static/js/main.394a7295.js"
   ]
 }
