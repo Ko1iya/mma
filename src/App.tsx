@@ -21,7 +21,6 @@ export const AppContext = React.createContext<IAppContext>({
 function App() {
   const [loading, setLoading] = useState(true)
 
-  // console.log(styles)
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
@@ -32,7 +31,7 @@ function App() {
 
   //-----------------------------------------
   // Реализация блока выбора филиала
-  const [location, setLocation] = useState(localStorage.getItem("location"))
+  const [location, setLocation] = useState("start")
 
   function handlerChangeLocation(param: string) {
     window.scrollTo({
@@ -43,26 +42,14 @@ function App() {
   } // для передачи в компонент Branches
 
   function editLocation() {
-    setLocation("0")
+    setLocation("start")
     window.scrollTo({
       top: 0,
       behavior: "smooth", // опционально для плавного скролла
     })
   } // для редактирования location, передается в компонент BackBranches
 
-  // Эффект, который реагирует на изменение location и записывает значение в localStorage
-  useEffect(() => {
-    const storedLocation = localStorage.getItem("location")
-    console.log(storedLocation)
-
-    if (storedLocation !== location) {
-      localStorage.setItem("location", `${location}`)
-    }
-  }, [])
-
   //-----------------------------------------
-
-  console.log(location)
 
   return (
     <AppContext.Provider value={{ location, editLocation }}>
@@ -76,10 +63,10 @@ function App() {
               <span className={styles.dot}></span>
             </div>
           </div>
-        ) : location == "0" ? (
+        ) : location == "start" ? (
           <Branches changeLocation={handlerChangeLocation}></Branches>
         ) : (
-          <MyApp />
+          <MyApp location={location} />
         )}
       </div>
     </AppContext.Provider>

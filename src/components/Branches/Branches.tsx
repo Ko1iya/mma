@@ -54,28 +54,28 @@ function Branches(prop: AboutUsProps) {
             Выбери ближайший спортивный клуб
           </h1>
           <ButBranche
-            id={1}
+            id={"angarsk"}
             changeLocation={prop.changeLocation}
             className={styles.delay1}
           >
             {myDataBranches.angarsk.name}
           </ButBranche>
           <ButBranche
-            id={2}
+            id={"meget"}
             changeLocation={prop.changeLocation}
             className={styles.delay2}
           >
             {myDataBranches.meget.name}
           </ButBranche>
           <ButBranche
-            id={3}
+            id={"kuda"}
             changeLocation={prop.changeLocation}
             className={styles.delay3}
           >
             {myDataBranches.kuda.name}
           </ButBranche>
           <ButBranche
-            id={4}
+            id={"zima"}
             changeLocation={prop.changeLocation}
             className={styles.delay4}
           >
@@ -83,7 +83,7 @@ function Branches(prop: AboutUsProps) {
           </ButBranche>
 
           <ButBranche
-            id={5}
+            id={"urik"}
             changeLocation={prop.changeLocation}
             className={styles.delay5}
           >

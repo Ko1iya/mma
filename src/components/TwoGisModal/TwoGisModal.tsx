@@ -11,7 +11,11 @@ function TwoGisModal(prop: TwoGisModalProps) {
       <div className={styles.twoGisModalContainer}>
         <p className={styles.title}>Перейти в 2ГИС?</p>
         <div className={styles.buttonContainer}>
-          <a href='https://go.2gis.com/7cds5' className={styles.twoGisModalBut}>
+          <a
+            href='https://go.2gis.com/7cds5'
+            target='_blank'
+            className={styles.twoGisModalBut}
+          >
             Перейти
           </a>
           <button className={styles.twoGisModalBut} onClick={openModal}>

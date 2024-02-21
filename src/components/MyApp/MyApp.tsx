@@ -4,9 +4,11 @@ import Header from "../Header/Header"
 import Main from "../Main/Main"
 import styles from "./myApp.module.css"
 import icon from "../../logo.svg"
-interface MyAppProps {}
+interface MyAppProps {
+  location: string
+}
 
-function MyApp() {
+function MyApp(prop: MyAppProps) {
   const [myScrollY, setMyScrollY] = useState(0)
 
   useEffect(() => {
@@ -33,7 +35,7 @@ function MyApp() {
         style={{ opacity: `${myScrollY}` }}
       />
       <Header />
-      <Main />
+      <Main location={prop.location} />
       <div className={styles.footer}></div>
       <ButCalling text='Начать тренировки' />
     </div>

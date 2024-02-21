@@ -10,6 +10,7 @@ interface AboutUsProps {
   }
   title: string
   img: string
+  trainer?: boolean
 }
 
 function AboutUs(prop: AboutUsProps) {
@@ -53,7 +54,7 @@ function AboutUs(prop: AboutUsProps) {
         // style={{ height: `auto` }}
         className={`${styles.aboutContainer} ${
           stateText && styles.aboutContainerOpen
-        }`}
+        } ${prop.trainer && styles.aboutContainer__trainer}`}
         onClick={() => {
           setStateText((pre) => !pre)
           setHeightText((pre) =>
@@ -62,8 +63,21 @@ function AboutUs(prop: AboutUsProps) {
           scrollToElement()
         }}
       >
-        <div className={styles.imgAboutUsContainer}>
-          <img className={styles.imgAboutUs} src={prop.img} alt='Кубки' />
+        {/* .imgAboutUsContainer__trainer - означает модификатор тренера для блока About, если при добавление компонента AboutUs указываем параметр trainer
+        trainer: true, тогда все модификаторы применяются
+         */}
+        <div
+          className={`${styles.imgAboutUsContainer} ${
+            prop.trainer && styles.imgAboutUsContainer__trainer
+          }`}
+        >
+          <img
+            className={`${prop.trainer && styles.imgAboutUs__trainer} ${
+              styles.imgAboutUs
+            }`}
+            src={prop.img}
+            alt='Кубки'
+          />
         </div>
         <h1 className={styles.title}>{prop.title}</h1>
         <div ref={myTextContainer} className={styles.textContainer}>
