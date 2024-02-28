@@ -15,4 +15,6 @@ You will also see any lint errors in the console.
 
 ---
 
-Генерирование компонетов: npm run component Component
+## Генерирование компонетов: npm run component Component
+
+"homepages": "https://ko1iya.github.io/mma/", Изменил для деплоя на vercel
