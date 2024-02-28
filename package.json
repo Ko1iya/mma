@@ -1,7 +1,7 @@
 {
   "name": "prod-project",
   "version": "0.1.0",
-  "homepages": "https://ko1iya.github.io/mma/",
+  "homepage": "https://ko1iya.github.io/mma/",
   "private": true,
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
