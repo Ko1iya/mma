@@ -46,9 +46,7 @@ function AboutUs(prop: AboutUsProps) {
     <div className={styles.aboutUs} ref={myAboutUs}>
       <div
         style={{
-          height: `${
-            +heightText > 700 ? +heightText + 40 : +heightText + 70
-          }px`,
+          height: `${+heightText > 700 ? +heightText + 0 : +heightText + 70}px`,
         }}
         // Наверху с анимацией тупой, внизу без внимации
         // style={{ height: `auto` }}

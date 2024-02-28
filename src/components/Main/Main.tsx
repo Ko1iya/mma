@@ -8,6 +8,11 @@ import Map from "../Map/Map"
 import TwoGisModal from "../TwoGisModal/TwoGisModal"
 import { AppContext } from "../../App"
 import { myDataBranches } from "../../data/achievements"
+import Calling from "../Сalling/Calling"
+import ButCalling from "../ButCalling/ButCalling"
+import Gallery from "../Gallery/Gallery"
+import Schedule from "../Schedule/Schedule"
+import FinishCalling from "../finishCalling/FinishCalling"
 
 interface MainProps {
   location: string
@@ -15,7 +20,11 @@ interface MainProps {
 
 function Main(prop: MainProps) {
   const [twoGisModalOpen, setTwoGisModalOpen] = useState(false)
+  const [callingOpen, setCallingOpen] = useState(false)
 
+  function handlerCallingOpen() {
+    setCallingOpen((pre) => !pre)
+  }
   function handlerModalOpen() {
     setTwoGisModalOpen((pre) => !pre)
   }
@@ -31,22 +40,29 @@ function Main(prop: MainProps) {
       <BackBranches editLocation={editLocation} value={location} />
       <Map location={prop.location} openModal={handlerModalOpen} />
       {twoGisModalOpen && <TwoGisModal openModal={handlerModalOpen} />}
+      {callingOpen && <Calling openModal={handlerCallingOpen} />}
 
       {hereLocation.trainer.map((el, i) => {
         return (
-          <AboutUs title={el} img={hereLocation.trainerPhoto[i]} trainer={true}>
+          <AboutUs
+            title={el}
+            img={hereLocation.trainerPhoto[i]}
+            trainer={true}
+            key={hereLocation.trainer[i]}
+          >
             {{
-              preText:
-                "Тренер ск. «ЭРОН» Федерации рукопашного боя и каратэ с. Урик Тренерский. Cтаж 3 года.",
-              text: [
-                "Cтаж 3 года.",
-                "С по универсальному бою 5 кратный  победительчемпионата и первенства СФО по универсальному бою, победитель первенства России, серебряный и бронзовый призер первенства мира так же по универсальному бою",
-                "Тренируюсь 7 лет под руководством Чупина Вадима Владимировича.",
-              ],
+              preText: `${hereLocation.preText[i]}`,
+              text: hereLocation.text[i],
             }}
           </AboutUs>
         )
       })}
+
+      <Gallery></Gallery>
+      <Schedule handlerSchedule={hereLocation.schedule} />
+      <FinishCalling myOnClick={handlerCallingOpen} />
+
+      <ButCalling text='Начать тренировки' myOnClick={handlerCallingOpen} />
     </main>
   )
 }

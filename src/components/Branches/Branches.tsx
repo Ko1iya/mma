@@ -29,6 +29,10 @@ function Branches(prop: AboutUsProps) {
     }
   }
 
+  function redirectHref(id: string) {
+    window.location.href = id
+  }
+
   return (
     <div className={styles.containerBranches}>
       <div className={styles.branches}>
@@ -125,21 +129,45 @@ function Branches(prop: AboutUsProps) {
           </Trainer>
         </div>
 
-        {/* <div
-          style={{
-            fontSize: "1.6em",
-            color: "#eeeeee",
-            background: "linear-gradient(to right, #ffc40066, #ffe40000)",
-            padding: "5px 0 0 13px",
-            fontWeight: "100",
-            width: "100%",
-            boxSizing: "border-box",
-            marginTop: "20px",
-            height: "80px",
-          }}
-        >
-          Архив фото
-        </div> */}
+        <div className={styles.containerButton}>
+          <h1 className={styles.titleBranches}>Архив фото</h1>
+          <ButBranche
+            id={"https://disk.yandex.ru/d/4j-kY6XK26LZGA"}
+            changeLocation={redirectHref}
+            className={styles.delay1}
+          >
+            "2000 - 2005 г."
+          </ButBranche>
+          <ButBranche
+            id={"https://disk.yandex.ru/d/ZaHijQdZR8olPw"}
+            changeLocation={redirectHref}
+            className={styles.delay2}
+          >
+            "2005 - 2010 г."
+          </ButBranche>
+          <ButBranche
+            id={"https://disk.yandex.ru/d/xsjFjqJWZuQ6vg"}
+            changeLocation={redirectHref}
+            className={styles.delay3}
+          >
+            "2010 - 2015 г."
+          </ButBranche>
+          <ButBranche
+            id={"https://disk.yandex.ru/d/V8pYLWSCK3CvAA"}
+            changeLocation={redirectHref}
+            className={styles.delay4}
+          >
+            "2015 - 2020 г."
+          </ButBranche>
+
+          <ButBranche
+            id={"https://disk.yandex.ru/d/VilRba_iZs_sFw"}
+            changeLocation={redirectHref}
+            className={styles.delay5}
+          >
+            "2020 - наши дни"
+          </ButBranche>
+        </div>
 
         <ButCalling
           text='Выбрать филиал'

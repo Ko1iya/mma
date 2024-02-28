@@ -37,7 +37,7 @@ function MyApp(prop: MyAppProps) {
       <Header />
       <Main location={prop.location} />
       <div className={styles.footer}></div>
-      <ButCalling text='Начать тренировки' />
+      {/* <ButCalling text='Начать тренировки' /> */}
     </div>
   )
 }

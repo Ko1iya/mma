@@ -23,6 +23,7 @@
   border-right-width: 0px;
   border-top-width: 0px;
   background: linear-gradient(to right, #ffc40066, #00000052);
+  overflow: hidden;
 }
 
 .aboutContainer__trainer {
@@ -30,7 +31,7 @@
 }
 
 .aboutContainer__trainer > * {
-  background: #00000040;
+  background: #0000006e;
 }
 
 .title {
@@ -38,16 +39,15 @@
   font-size: 1.4em;
   padding: 10px 0 0 10px;
   margin: 0;
-  /* background: #00000040; */
+  /* background: #0000006e; */
 }
 
 .textContainer {
   height: auto;
-  /* background: #00000040; */
+  /* background: #0000006e; */
 }
 
 .readMore {
-  height: 22px;
   color: #ffd800;
   font-size: 1.2em;
   margin: 0;
@@ -56,7 +56,7 @@
 
   border-left-width: 0px;
   border-right-width: 0px;
-  /* background-color: #00000040; */
+  /* background-color: #0000006e; */
 }
 
 .preText,
@@ -76,6 +76,7 @@
 }
 .imgAboutUs__trainer {
   width: 95%;
+  max-width: 400px;
 }
 
 .imgAboutUsContainer {

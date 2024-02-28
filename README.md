@@ -8,5 +8,11 @@ You will also see any lint errors in the console.
 
 ### `npm run build`
 
-remoteLocation - Удалил отслеживания состояния в localStorage, хотел чтобы там
-хранился выбор филиала пользователем
+---
+
+Истории реп: remoteLocation - Удалил отслеживания состояния в localStorage,
+хотел чтобы там хранился выбор филиала пользователем
+
+---
+
+Генерирование компонетов: npm run component Component

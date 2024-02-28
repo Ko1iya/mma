@@ -1,22 +1,50 @@
-import ButCalling from "../ButCalling/ButCalling"
-import MainText from "../MainText/MainText"
+import { useContext } from "react"
+import { AppContext } from "../../App"
 import styles from "./calling.module.css"
 
-interface СallingProps {}
+import { myDataBranches } from "../../data/achievements"
 
-function Сalling(prop: СallingProps) {
+interface CallingProps {
+  openModal: () => void
+}
+
+function Calling(prop: CallingProps) {
+  const { openModal } = prop
+
+  const { location } = useContext(AppContext)
+
+  let hereLocation = myDataBranches[location]
+
   return (
-    <div className={styles.сalling}>
-      <MainText className={styles.сallingEl}>
-        Присоединяйся к нам сейчас!
-      </MainText>
-      <MainText className={styles.сallingEl}>
-        Мы поможем тебе преодолеть себя и стать настоящим бойцом!
-      </MainText>
+    <div className={styles.calling}>
+      <div className={styles.callingContainer}>
+        {myDataBranches[location].trainer.map((el, i) => {
+          return (
+            <>
+              {i > 0 ? " " : <p className={styles.title}>Позвонить тренеру?</p>}
+              <p className={styles.title}>Тренер: {`${el}`}</p>
+              <p className={styles.title}>
+                Номер: {`${hereLocation.number[i]}`}
+              </p>
 
-      <ButCalling text='НАЧАТЬ ТРЕНИРОВКИ' />
+              <div className={styles.buttonContainer}>
+                <a
+                  href={`${hereLocation && hereLocation.numberRef[i]}`}
+                  target='_blank'
+                  className={styles.callingBut}
+                >
+                  Позвонить
+                </a>
+                <button className={styles.callingBut} onClick={openModal}>
+                  Отмена
+                </button>
+              </div>
+            </>
+          )
+        })}
+      </div>
     </div>
   )
 }
 
-export default Сalling
+export default Calling

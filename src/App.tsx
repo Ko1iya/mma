@@ -8,12 +8,12 @@ import { myDataBranches } from "./data/achievements"
 
 //------------------------
 interface IAppContext {
-  location: string | null
+  location: string
   editLocation: () => void
 }
 
 export const AppContext = React.createContext<IAppContext>({
-  location: null,
+  location: "start",
   editLocation: () => null,
 })
 //------------------------
