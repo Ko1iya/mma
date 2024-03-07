@@ -11,6 +11,7 @@ import kovalenko from "../../img/trainers/Kovalenko.png"
 import novzov from "../../img/trainers/novzov.png"
 import schmakov from "../../img/trainers/Shmakov.png"
 import chupin from "../../img/trainers/Chupin.png"
+import vishnyakov from "../../img/trainers/vishnyakov.png"
 import { myDataBranches } from "../../data/achievements"
 
 interface AboutUsProps {
@@ -126,6 +127,12 @@ function Branches(prop: AboutUsProps) {
             text='Черный пояс по спортивному каратэ, КМС, судья 2 категории'
           >
             Коваленко Роман Александрович
+          </Trainer>
+          <Trainer
+            img={vishnyakov}
+            text='Тренер ск. «ЭРОН» Федерации рукопашного боя. Чёрный пояс 1й дан по спортивному каратэ.'
+          >
+            Вишняков Егор Александрович
           </Trainer>
         </div>
 

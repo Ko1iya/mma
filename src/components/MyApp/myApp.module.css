@@ -5,11 +5,11 @@
 .myApp {
   width: 100%;
   min-height: calc(100vh + var(--extra-height));
-
-  background-image: url("../../img/fonKraska.jpg");
+  background-image: linear-gradient(221deg, #3f3507, #c49804);
+  /* background-image: url("../../img/fonKraska.jpg");
   background-size: 800px 1484px;
   background-position: top;
-  background-repeat: repeat-y;
+  background-repeat: repeat-y; */
 }
 
 .footer {
@@ -28,7 +28,7 @@
   max-width: 300px;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .myApp {
     background-size: 1700px 3153px;
   }
@@ -38,4 +38,4 @@
   .myApp {
     background-size: 3400px 6306px;
   }
-}
+} */

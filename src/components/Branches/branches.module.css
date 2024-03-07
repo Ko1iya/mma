@@ -6,12 +6,12 @@
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 5px;
-  background-image: url("../../img/fonKraska.jpg");
+  /* background-image: url("../../img/fonKraska.jpg");
   background-size: 800px 1484px;
   background-position: top;
-  background-repeat: repeat-y;
+  background-repeat: repeat-y; */
   overflow: hidden;
-  /* background-image: linear-gradient(221deg, #181818, #c49804); */
+  background-image: linear-gradient(221deg, #3f3507, #c49804);
 }
 
 .containerButton {
@@ -83,7 +83,7 @@
   animation-delay: 4.8s;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .containerBranches {
     background-size: 1700px 3153px;
   }
@@ -93,4 +93,4 @@
   .containerBranches {
     background-size: 3400px 6306px;
   }
-}
+} */
