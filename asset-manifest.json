@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mma/static/css/main.c776e3ad.css",
-    "main.js": "/mma/static/js/main.9d797d89.js",
+    "main.css": "/mma/static/css/main.de48167a.css",
+    "main.js": "/mma/static/js/main.cc08bbd2.js",
     "static/js/787.a981de7b.chunk.js": "/mma/static/js/787.a981de7b.chunk.js",
     "static/media/a3.png": "/mma/static/media/a3.82f6976500927151f01f.png",
     "static/media/m2.jpg": "/mma/static/media/m2.95c999eb7171683ed17e.jpg",
@@ -15,9 +15,9 @@
     "static/media/a1.png": "/mma/static/media/a1.7db58d6cd9acc977c739.png",
     "static/media/a2.png": "/mma/static/media/a2.b15ea053ffe7fcdcedd6.png",
     "static/media/Odinaev.png": "/mma/static/media/Odinaev.80347f330e826ee21cbe.png",
-    "static/media/Chupin.png": "/mma/static/media/Chupin.9da486700a64f343012d.png",
-    "static/media/vishnyakov.png": "/mma/static/media/vishnyakov.838a313067e194fe199d.png",
+    "static/media/Chupin.png": "/mma/static/media/Chupin.51d628c99d9c7f20fa8b.png",
     "static/media/logo3.png": "/mma/static/media/logo3.5c908ae5e481c840dfb1.png",
+    "static/media/vishnyakov.png": "/mma/static/media/vishnyakov.181fd9639582c25b2242.png",
     "static/media/u3.jpg": "/mma/static/media/u3.53c764434e77540fb2bf.jpg",
     "static/media/u1.jpg": "/mma/static/media/u1.068dff19b08c55c33726.jpg",
     "static/media/u6.jpg": "/mma/static/media/u6.d281729ff285bb4afa02.jpg",
@@ -65,12 +65,12 @@
     "static/media/logo.svg": "/mma/static/media/logo.788818cbe13fd0cbf2670d3cfc844366.svg",
     "index.html": "/mma/index.html",
     "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.081f4f20a4fb15360a48937961580712.svg",
-    "main.c776e3ad.css.map": "/mma/static/css/main.c776e3ad.css.map",
-    "main.9d797d89.js.map": "/mma/static/js/main.9d797d89.js.map",
+    "main.de48167a.css.map": "/mma/static/css/main.de48167a.css.map",
+    "main.cc08bbd2.js.map": "/mma/static/js/main.cc08bbd2.js.map",
     "787.a981de7b.chunk.js.map": "/mma/static/js/787.a981de7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c776e3ad.css",
-    "static/js/main.9d797d89.js"
+    "static/css/main.de48167a.css",
+    "static/js/main.cc08bbd2.js"
   ]
 }
