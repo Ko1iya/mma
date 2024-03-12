@@ -1,4 +1,4 @@
-import styles from "./TemplateName.module.css"
+import styles from "./templateName.module.css"
 
 interface TemplateNameProps {}
 

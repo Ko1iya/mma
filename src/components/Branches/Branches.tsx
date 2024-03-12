@@ -13,6 +13,7 @@ import schmakov from "../../img/trainers/Shmakov.png"
 import chupin from "../../img/trainers/Chupin.png"
 import vishnyakov from "../../img/trainers/vishnyakov.png"
 import { myDataBranches } from "../../data/achievements"
+import Equipment from "../Equipment/Equipment"
 
 interface AboutUsProps {
   changeLocation: (param: string) => void
@@ -97,44 +98,46 @@ function Branches(prop: AboutUsProps) {
         </div>
 
         <div className={styles.containerTrainer}>
-          <h1 className={styles.titleBranches}>У нас выдающиеся тренера:</h1>
+          <h1 className={styles.titleBranches}>Наши действующие тренера:</h1>
           <Trainer
             img={chupin}
-            text='Черный пояс 2 дан по спортивному каратэ. Мастер спорта судья Всероссийской и Международной категории'
+            text='Черный пояс 2 дан по спортивному каратэ. Мастер спорта по армейскому рукопашному бою. Судья Всероссийской и Международной категории'
           >
             Чупин Вадим Владимирович
           </Trainer>
           <Trainer
             img={odinaev}
-            text='Зеленый пояс, Мастер Спорта, судья 1 категории'
+            text='Зеленый пояс по спортивному каратэ. Мастер спорта по универсальному бою. Судья 3 категории'
           >
             Одинаев Рустам Дилшодович
           </Trainer>
           <Trainer
             img={schmakov}
-            text='Черный пояс по спортивному каратэ, КМС , судья 1 категории.'
+            text='Черный пояс по спортивному каратэ. КМС по универсальному бою. Судья 1 категории.'
           >
             Шмаков Алексей Викторович
           </Trainer>
           <Trainer
             img={novzov}
-            text='КМС Черный пояс по Спортивному каратэ, судья 1 категории'
+            text=' Черный пояс по спортивному каратэ. КМС по универсальному бою. Судья 3 категории'
           >
             Новцов Андрей Сергеевич
           </Trainer>
           <Trainer
             img={kovalenko}
-            text='Черный пояс по спортивному каратэ, КМС, судья 2 категории'
+            text='Черный пояс по спортивному каратэ. КМС по универсальному бою. Судья 3 категории'
           >
             Коваленко Роман Александрович
           </Trainer>
           <Trainer
             img={vishnyakov}
-            text='Тренер ск. «ЭРОН» Федерации рукопашного боя. Чёрный пояс 1й дан по спортивному каратэ.'
+            text=' Чёрный пояс по спортивному каратэ. КМС по универсальному бою. Судья 3 категории'
           >
             Вишняков Егор Александрович
           </Trainer>
         </div>
+
+        <Equipment />
 
         <div className={styles.containerButton}>
           <h1 className={styles.titleBranches}>Архив фото</h1>
