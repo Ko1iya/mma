@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mma/static/css/main.a2b853a6.css",
-    "main.js": "/mma/static/js/main.209ec5df.js",
+    "main.css": "/mma/static/css/main.89f18c12.css",
+    "main.js": "/mma/static/js/main.8a73e240.js",
     "static/js/787.a981de7b.chunk.js": "/mma/static/js/787.a981de7b.chunk.js",
     "static/media/a3.png": "/mma/static/media/a3.82f6976500927151f01f.png",
     "static/media/m2.jpg": "/mma/static/media/m2.95c999eb7171683ed17e.jpg",
@@ -20,7 +20,6 @@
     "static/media/Chupin.png": "/mma/static/media/Chupin.51d628c99d9c7f20fa8b.png",
     "static/media/4.png": "/mma/static/media/4.5e061da39ec82e6854b8.png",
     "static/media/logo3.png": "/mma/static/media/logo3.5c908ae5e481c840dfb1.png",
-    "static/media/8.png": "/mma/static/media/8.2115d8f64430a38477a2.png",
     "static/media/vishnyakov.png": "/mma/static/media/vishnyakov.181fd9639582c25b2242.png",
     "static/media/u3.jpg": "/mma/static/media/u3.53c764434e77540fb2bf.jpg",
     "static/media/u1.jpg": "/mma/static/media/u1.068dff19b08c55c33726.jpg",
@@ -73,12 +72,12 @@
     "static/media/logo.svg": "/mma/static/media/logo.788818cbe13fd0cbf2670d3cfc844366.svg",
     "index.html": "/mma/index.html",
     "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.081f4f20a4fb15360a48937961580712.svg",
-    "main.a2b853a6.css.map": "/mma/static/css/main.a2b853a6.css.map",
-    "main.209ec5df.js.map": "/mma/static/js/main.209ec5df.js.map",
+    "main.89f18c12.css.map": "/mma/static/css/main.89f18c12.css.map",
+    "main.8a73e240.js.map": "/mma/static/js/main.8a73e240.js.map",
     "787.a981de7b.chunk.js.map": "/mma/static/js/787.a981de7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2b853a6.css",
-    "static/js/main.209ec5df.js"
+    "static/css/main.89f18c12.css",
+    "static/js/main.8a73e240.js"
   ]
 }
