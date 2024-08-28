@@ -11,7 +11,8 @@
   background-position: top;
   background-repeat: repeat-y; */
   overflow: hidden;
-  background-image: linear-gradient(221deg, #3f3507, #c49804);
+  /* background-image: linear-gradient(221deg, #3f3507, #c49804); */
+  background: white;
 }
 
 .containerButton {
@@ -46,7 +47,8 @@
 .titleBranches {
   width: 100%;
   font-size: 1.6em;
-  color: #eeeeee;
+  /* color: #eeeeee; */
+  color: black;
   background: linear-gradient(to right, #ffc40066, #00000052);
   padding: 5px 0 10px 13px;
   margin: 0;

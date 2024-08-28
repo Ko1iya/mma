@@ -31,11 +31,11 @@
 }
 
 .aboutContainer__trainer > * {
-  background: #0000006e;
+  background: #ffffff64;
 }
 
 .title {
-  color: #f1d003;
+  color: #000000;
   font-size: 1.4em;
   padding: 10px 0 0 10px;
   margin: 0;
@@ -48,7 +48,8 @@
 }
 
 .readMore {
-  color: #ffd800;
+  color: black;
+  /* color: #ffd800; */
   font-size: 1.2em;
   margin: 0;
   padding: 5px 10px 10px 0;
