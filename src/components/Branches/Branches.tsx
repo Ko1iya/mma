@@ -1,6 +1,6 @@
 import ButBranche from "../ButBranche/ButBranche"
 import styles from "./branches.module.css"
-import icon from "../../logo.png"
+import icon from "../../img/icon.jpeg"
 import AboutUs from "../AboutUs/AboutUs"
 import cups from "../../img/cups.png"
 import ButCalling from "../ButCalling/ButCalling"
