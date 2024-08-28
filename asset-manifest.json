@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mma/static/css/main.89f18c12.css",
-    "main.js": "/mma/static/js/main.8a73e240.js",
+    "main.css": "/mma/static/css/main.e9bc8b7e.css",
+    "main.js": "/mma/static/js/main.1540ec13.js",
     "static/js/787.a981de7b.chunk.js": "/mma/static/js/787.a981de7b.chunk.js",
     "static/media/a3.png": "/mma/static/media/a3.82f6976500927151f01f.png",
     "static/media/m2.jpg": "/mma/static/media/m2.95c999eb7171683ed17e.jpg",
@@ -61,9 +61,9 @@
     "static/media/z13.jpg": "/mma/static/media/z13.1f8d62b18b1ec4926e20.jpg",
     "static/media/z6.jpg": "/mma/static/media/z6.050ffbad51bf116414d4.jpg",
     "static/media/z4.jpg": "/mma/static/media/z4.52f2d40213ff664cac1f.jpg",
+    "static/media/icon.jpeg": "/mma/static/media/icon.fb9c900e5228b05a4e8a.jpeg",
     "static/media/z2.jpg": "/mma/static/media/z2.d3d9beba8487b6801ffa.jpg",
     "static/media/z11.jpg": "/mma/static/media/z11.20ac4fa02724032039c1.jpg",
-    "static/media/logo.png": "/mma/static/media/logo.c37869995ff5f2f09763.png",
     "static/media/z.jpg": "/mma/static/media/z.8a9cffb16ec7cb9f6a35.jpg",
     "static/media/mapUrik.png": "/mma/static/media/mapUrik.b85af517127b5f7ea01e.png",
     "static/media/z12.jpg": "/mma/static/media/z12.87eec40bd7e617186c25.jpg",
@@ -72,12 +72,12 @@
     "static/media/logo.svg": "/mma/static/media/logo.788818cbe13fd0cbf2670d3cfc844366.svg",
     "index.html": "/mma/index.html",
     "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.081f4f20a4fb15360a48937961580712.svg",
-    "main.89f18c12.css.map": "/mma/static/css/main.89f18c12.css.map",
-    "main.8a73e240.js.map": "/mma/static/js/main.8a73e240.js.map",
+    "main.e9bc8b7e.css.map": "/mma/static/css/main.e9bc8b7e.css.map",
+    "main.1540ec13.js.map": "/mma/static/js/main.1540ec13.js.map",
     "787.a981de7b.chunk.js.map": "/mma/static/js/787.a981de7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89f18c12.css",
-    "static/js/main.8a73e240.js"
+    "static/css/main.e9bc8b7e.css",
+    "static/js/main.1540ec13.js"
   ]
 }
