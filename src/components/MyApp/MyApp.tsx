@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+
 import ButCalling from "../ButCalling/ButCalling"
 import Header from "../Header/Header"
 import Main from "../Main/Main"
@@ -34,7 +35,8 @@ function MyApp(prop: MyAppProps) {
         alt='Эмблема клуба'
         style={{ opacity: `${myScrollY}` }}
       />
-      <Header />
+      <Header location={prop.location} />
+
       <Main location={prop.location} />
       <div className={styles.footer}></div>
       {/* <ButCalling text='Начать тренировки' /> */}

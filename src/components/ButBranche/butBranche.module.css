@@ -10,7 +10,9 @@
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   width: 90%;
   height: auto;
-  animation: butAnimation 6s infinite;
+  animation-name: butAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes butAnimation {
