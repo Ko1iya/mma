@@ -4,7 +4,6 @@ import icon from "../../img/icon.jpeg"
 
 import { useRef } from "react"
 import { myDataBranches } from "../../data/achievements"
-import { log } from "console"
 
 interface AboutUsProps {
   changeLocation: (param: string) => void

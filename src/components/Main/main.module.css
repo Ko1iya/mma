@@ -53,3 +53,9 @@
 .delay5 {
   animation-delay: 4.8s;
 }
+
+@media screen and (min-width: 800px) {
+  .main {
+    padding-top: 50px;
+  }
+}

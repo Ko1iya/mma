@@ -7,6 +7,7 @@ import { useContext } from "react"
 import hamburger from "../../img/hamburger-menu.svg"
 interface HeaderProps {
   location: string
+  handlerBurger: () => void
 }
 
 function Header(prop: HeaderProps) {
@@ -42,7 +43,7 @@ function Header(prop: HeaderProps) {
           src={logo}
           alt='Эмблема клуба'
         />
-        <button className={styles.hamburger}>
+        <button className={styles.hamburger} onClick={prop.handlerBurger}>
           <img src={hamburger} className={styles.hamburgerImg} alt='Burger' />
         </button>
       </div>

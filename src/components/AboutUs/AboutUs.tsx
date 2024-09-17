@@ -48,8 +48,6 @@ function AboutUs(prop: AboutUsProps) {
         style={{
           height: `${+heightText > 700 ? +heightText + 0 : +heightText + 70}px`,
         }}
-        // Наверху с анимацией тупой, внизу без внимации
-        // style={{ height: `auto` }}
         className={`${styles.aboutContainer} ${
           stateText && styles.aboutContainerOpen
         } ${prop.trainer && styles.aboutContainer__trainer}`}

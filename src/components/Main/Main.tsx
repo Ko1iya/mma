@@ -23,6 +23,7 @@ import ButBranche from "../ButBranche/ButBranche"
 
 interface MainProps {
   location: string
+  trainersRef: React.RefObject<HTMLDivElement>
 }
 
 function Main(prop: MainProps) {
@@ -36,7 +37,7 @@ function Main(prop: MainProps) {
     setTwoGisModalOpen((pre) => !pre)
   }
 
-  const { location } = prop
+  const { location, trainersRef } = prop
 
   const hereLocation = myDataBranches[location]
 
@@ -80,7 +81,7 @@ function Main(prop: MainProps) {
           ],
         }}
       </AboutUs>
-      <div className={styles.containerTrainer}>
+      <div className={styles.containerTrainer} ref={trainersRef}>
         <h1 className={styles.titleBranches}>Наши действующие тренера:</h1>
         <Trainer
           img={chupin}
