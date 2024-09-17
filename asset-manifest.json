@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mma/static/css/main.e9bc8b7e.css",
-    "main.js": "/mma/static/js/main.1540ec13.js",
+    "main.css": "/mma/static/css/main.0a8d6afe.css",
+    "main.js": "/mma/static/js/main.5db16529.js",
     "static/js/787.a981de7b.chunk.js": "/mma/static/js/787.a981de7b.chunk.js",
     "static/media/a3.png": "/mma/static/media/a3.82f6976500927151f01f.png",
     "static/media/m2.jpg": "/mma/static/media/m2.95c999eb7171683ed17e.jpg",
@@ -69,15 +69,18 @@
     "static/media/z12.jpg": "/mma/static/media/z12.87eec40bd7e617186c25.jpg",
     "static/media/z3.jpg": "/mma/static/media/z3.15a07c077548e442ff62.jpg",
     "static/media/3.png": "/mma/static/media/3.9a5e19a189085ee5eae4.png",
-    "static/media/logo.svg": "/mma/static/media/logo.788818cbe13fd0cbf2670d3cfc844366.svg",
+    "static/media/logo.svg": "/mma/static/media/logo.adfba2d887124468283f4c6bfd0bcd08.svg",
+    "static/media/exitBurg.svg": "/mma/static/media/exitBurg.8c3804bafe208ab8a2be0852ec3a8c0b.svg",
+    "static/media/phoneСalling.svg": "/mma/static/media/phoneСalling.f1fb9522bb301a23516a22fc04d334b4.svg",
+    "static/media/hamburger-menu.svg": "/mma/static/media/hamburger-menu.e222a78aba83d0144b46675bfc7fc248.svg",
     "index.html": "/mma/index.html",
-    "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.081f4f20a4fb15360a48937961580712.svg",
-    "main.e9bc8b7e.css.map": "/mma/static/css/main.e9bc8b7e.css.map",
-    "main.1540ec13.js.map": "/mma/static/js/main.1540ec13.js.map",
+    "static/media/ButBackToBranches.svg": "/mma/static/media/ButBackToBranches.4fc1c72de3a14e8852d2df39a12f6094.svg",
+    "main.0a8d6afe.css.map": "/mma/static/css/main.0a8d6afe.css.map",
+    "main.5db16529.js.map": "/mma/static/js/main.5db16529.js.map",
     "787.a981de7b.chunk.js.map": "/mma/static/js/787.a981de7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9bc8b7e.css",
-    "static/js/main.1540ec13.js"
+    "static/css/main.0a8d6afe.css",
+    "static/js/main.5db16529.js"
   ]
 }
